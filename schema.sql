@@ -14,7 +14,8 @@ CREATE TABLE Pictures
 (
   picture_id int4  AUTO_INCREMENT,
   user_id int4,
-  imgdata blob ,
+  imgdata longblob ,
+  caption VARCHAR(255),
   INDEX upid_idx (user_id),
   CONSTRAINT pictures_pk PRIMARY KEY (picture_id)
 );
